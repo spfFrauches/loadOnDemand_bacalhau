@@ -43,7 +43,6 @@ function loadPlanos() {
     xmlhttp.onreadystatechange = function() {           
         if (this.readyState == 4 && this.status == 200) {                              
             lista = this.responseText;
-            console.log(lista) ;
             document.getElementById("tablePlanos").innerHTML = lista;
         }       
     }; 
